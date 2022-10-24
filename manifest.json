@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "Custom Brandejs theme for IS",
+    "version": "1.0",
+    "description": "The only proper way to enjoy MUNI IS (shamelessly stolen)",
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "aaaaaa@aaaaa"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://is.muni.cz/auth/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        "assets/brandejsMatrix.jpg",
+        "assets/brandejsMC.jpg",
+        "assets/brandejsWine.jpg",
+        "assets/brandejsMucitel.jpg",
+        "assets/brandejsNeon.jpg"
+    ]
+}
