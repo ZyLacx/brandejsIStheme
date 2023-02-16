@@ -5,11 +5,6 @@
     "version": "1.0",
     "description": "The only proper way to enjoy MUNI IS (shamelessly stolen)",
 
-    "browser_specific_settings": {
-        "gecko": {
-            "id": "aaaaaa@aaaaa"
-        }
-    },
     "content_scripts": [
         {
             "matches": ["https://is.muni.cz/auth/*"],
