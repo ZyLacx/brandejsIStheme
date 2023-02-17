@@ -12,17 +12,13 @@ let other_css = `
         right: 0;
         top: 0 !important; }
     .ikony { 
-        float: left;`;
+        float: left;}`;
 if (document.body.classList.contains("motiv-tmavy")){
     photos.concat(browser.runtime.getURL("assets/brandejsMucitel.png"), browser.runtime.getURL("assets/brandejsMC.png"));
 }
 else {
     photos.concat(browser.runtime.getURL("assets/brandejsMC.jpg"), browser.runtime.getURL("assets/brandejsMucitel.jpg"));
-    other_css += `padding-left: 25%;
-                background-color: rgba(255, 255, 255, 0.7);
-                border-radius: 20px;`;
 }
-    other_css += "}";
 
 let rng = Math.floor(Math.random() * photos.length);
 
