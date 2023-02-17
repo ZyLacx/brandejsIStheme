@@ -4,7 +4,11 @@
     "name": "Custom Brandejs theme for IS",
     "version": "1.0",
     "description": "The only proper way to enjoy MUNI IS (shamelessly stolen)",
-
+    "browser_specific_settings": {
+        "gecko": {
+          "update_url": "https://zylacx.github.io/updates.json"
+        }
+    },
     "content_scripts": [
         {
             "matches": ["https://is.muni.cz/auth/*"],
