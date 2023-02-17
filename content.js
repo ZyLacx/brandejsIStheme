@@ -47,18 +47,13 @@ let app_css = `
     }
     #app_menu.empty { background-color: transparent }`;
 
-let style = document.getElementsByTagName("style");
-if (style.length == 0) {
-    document.head.innerHTML += "<style>" + app_css + other_css + "</style>";
+let style = document.createElement("style");
+let main_page = document.getElementsByClassName("motiv-titulka");
+if (main_page.length == 0) {
+    style.innerText = app_css + other_css;
 }
 else {
-    let main_page = document.getElementsByClassName("motiv-titulka");
-    if (main_page.length == 0) {
-        style[0].innerHTML += app_css + other_css;
-    }
-    else {
-        style[0].innerHTML += main_menu_css + other_css;
-    }
+    style.innerText = main_menu_css + other_css;
 }
 
-
+document.head.appendChild(style)
