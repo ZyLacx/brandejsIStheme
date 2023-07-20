@@ -14,10 +14,10 @@ let other_css = `
     .ikony { 
         float: left;}`;
 if (document.body.classList.contains("motiv-tmavy")){
-    photos.concat(browser.runtime.getURL("assets/brandejsMucitel.png"), browser.runtime.getURL("assets/brandejsMC.png"));
+    photos.push(browser.runtime.getURL("assets/brandejsMucitel.png"), browser.runtime.getURL("assets/brandejsMC.png"));
 }
 else {
-    photos.concat(browser.runtime.getURL("assets/brandejsMC.jpg"), browser.runtime.getURL("assets/brandejsMucitel.jpg"));
+    photos.push(browser.runtime.getURL("assets/brandejsMucitel.jpg"), browser.runtime.getURL("assets/brandejsMC.jpg"));
 }
 
 let rng = Math.floor(Math.random() * photos.length);

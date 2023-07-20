@@ -2,11 +2,10 @@
     "manifest_version": 2,
 
     "name": "Custom Brandejs theme for IS",
-    "version": "1.0",
+    "version": "1.1",
     "description": "The only proper way to enjoy MUNI IS (shamelessly stolen)",
     "browser_specific_settings": {
         "gecko": {
-            "id": "brandejsIS@custombrandejstheme",
             "update_url": "https://zylacx.github.io/updates.json"
         }
     },
