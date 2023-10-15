@@ -2,7 +2,7 @@
     "manifest_version": 2,
 
     "name": "Custom Brandejs theme for IS",
-    "version": "1.2.1",
+    "version": "1.2.0",
     "description": "The only proper way to enjoy MUNI IS (shamelessly stolen)",
     "browser_specific_settings": {
         "gecko": {
@@ -10,7 +10,7 @@
         }
     },
     "icons": {
-    	"16": "assets/icon.webp"
+    	"90": "assets/icon.webp"
     },
     "content_scripts": [
         {
